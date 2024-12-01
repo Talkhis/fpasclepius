@@ -10,6 +10,6 @@ COPY . .
 
 ENV PORT=3000
 
-ENV MODEL_URL=https://storage.googleapis.com/model-asclepius-api/model.json
+ENV MODEL_URL=https://storage.googleapis.com/asclepius-dicoding/model.json
 
 CMD ["npm","start"]
