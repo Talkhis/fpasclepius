@@ -1,7 +1,7 @@
 const tf = require('@tensorflow/tfjs-node');
-const modelURL= 'https://storage.googleapis.com/asclepius-api-dicoding/model.json'
-const envModelURL = `${process.env.MODEL_URL}`
-async function loadModel(envModelURL ?? modelURL) {
-    return tf.loadGraphModel();
+const modelLink = 'https://storage.googleapis.com/asclepius-dicoding-cc/model.json'
+const envModelLink = `${process.env.MODEL_URL}`
+async function loadModel() {
+    return tf.loadGraphModel(envModelLink ?? modelLink);
 }
 module.exports = loadModel;
