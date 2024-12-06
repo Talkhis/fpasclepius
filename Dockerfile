@@ -8,8 +8,8 @@ RUN npm install
 
 COPY . .
 
-ENV PORT=3000
+EXPOSE 8080
 
-ENV MODEL_URL="https://storage.googleapis.com/asclepius-api-dicoding/model.json"
+ENV MODEL_URL = "SET YOUR MODEL URL!"
 
 CMD ["npm","start"]
